@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        body{
+            
+            background-color: black;
+            border-radius: 25px rgb(158, 82, 158);
+        }
+        
+        .nav-bar p{
+            font-size: x-large;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 20px;
+            background: linear-gradient(
+                to bottom right,
+                #6889FF, #C668FF
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            
+        }
+        .nav-bar{
+           width: 1250px;
+           height: 40px;
+           display: flex;
+           justify-content:space-between ;
+           align-items: center ;
+           text-decoration: none;
+           margin-bottom: 80px;
+           color: whitesmoke;
+           background-color: grey;
+           border-radius: 15px;
+        }
+        ul{
+            display: flex;
+        }
+        li{ 
+            display: flex;
+            padding: 12px;
+            align-items: center;
+        }
+        li a{
+            color: azure;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .text p{
+            font-size: x-large;
+            text-align: center;
+            color: azure;
+            margin-bottom: 50px;
+        }
+
+        .box {
+    
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        .box1{
+            width: 450px;
+            height: 500px;
+            margin-left: 150px;
+            color: white;
+        }
+
+        .box1 img{
+            width: 50px;
+            height: 50px;
+        }
+         
+        .box2{
+            width: 450px;
+            height: 470px;
+            margin-right: 150px;
+            text-align: left;
+            padding-left: 20px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px  violet;
+            background-color: rgb(94, 89, 89);
+            color: white;
+
+        }
+        
+
+        .box2 h{
+            font-size: larger;
+            margin-top: 50px;
+            color: rgb(193, 127, 210);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+            
+        }
+        .box2 p{
+            font-size: medium;
+        
+            
+        }
+        
+        .box2 input {
+            width: 400px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .box2 button {
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .box2 button:hover{
+            background-color: rgb(144, 68, 215);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div>
+            <p>Matt,the developer</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="text">
+        <p>Ready to help you achieve your business goals with professional support</p>
+    </div>
+
+    <div class="content">
+           <div class="box">
+            
+
+            <div class="box1">
+            <div>
+                <h>Get in Touch</h>
+            </div>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqo5SmuQTZHOAg-RpjXmXRsmAKyxxQJsVlfg&s">
+            <h>Email</h> 
+            <p>Matt@gamil.com</p> 
+
+            <img src="data:image/png;base64,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">
+            <h>Location</h>
+            <p>Yangon City,Myanmar</p>
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///8YGBjw8PD8/PyUlJT39/cICAjZ2dn19fXx8fFCQkK4uLjs7OzHx8fm5uaJiYmioqLBwcFUVFQ2NjZ0dHSBgYElJSWurq55eXlra2tZWVkhISHg4OAsLCywsLBLS0s9PT1hYWGbm5saGhqPj4/Pz8/KYL/nAAAHXklEQVR4nO2df2OiPAzHkSnoQH4oojLncG6+/5d483bPM4UiSZsmTPv58w6R7yxNmqSp5zkcDofD4XA4HA6Hw+FwOByO38S6iJbVtswmx0lWbqtlVKylH4mKj5cyT6ZpMGoSpNMkL99/t9B6ksxnLWkNofNk8iL9oFpE+bRH2yXTvJZ+YBS71eIJIe+b2WK1l35wGOEq6RuZXQSnlfTT91PE7TkFJTKOpCXcIsxejeR9k2ahtJAO9kfd0dkkyIf4Rq7jMZG+M+N4aBr9DaG8b+KdtKgLQnp9Zza+tLD/yJ6tCPwykZm0tL8sKebPLl6X0vI8782ivjOxsL4K751heRb1c2Lr+s7I/YzRnEXgaDSvZQROmPSdOUoIXDAKHI0Sdl/1kLIK/PLHD7wC35n1nXnnFFgKCByNGD2cXETgl6PKJZDHCqpgsoy8k+g1CYfARFAgi0RZgQwSJYcoi0S5SeYHq9ONlJm4JrcnUMbQtyltCZRw1dRYcuAO0rousOOGc68mbpHaEChvJy5Z0AvkXNFDmFALrKUVtaiJFXIFneDMaQUOwZdpQurbrIBfGsxmlDm2HipChZDUy1O8qtf+R1Rt7MfBv3mmEwjITQSXQZRP++r+8kYlcNn/XdPrcOaeaWKiykz1p8+mzY+EVCn927zSCMx6v2jcDki/MOgbEQUYAT+Hyr84Mej7mmwogv39OfqxKt/OtNQiCKF+9H/LSfW5na3kfoMPY4UAS6GetJkWW8YWYw/4EnVyz2YBwyWmpUUQh1RWoaF7uoe4merVKFdIYGz2I4LChy17f6Zgc8GNgotA16RQfLTfT6BiZmITgY+pehUYl8wmjg30Xapbn+SMjhsE3iLod8yauya2NhW10I+ewmMXwfWWCeb8hrbBCDFF6T8V6H7JHTsOdBVCozP/SDefZZnlJ56l4RW6xX3S6V44mlnTtdnOCU5mejXhyEEqit4wHVYq5jZ6iRqBGUMbrdAp2NwPAp3dUnCrPQ6UNK4CXXS+mdaiRGeBAd8gOfFCBV7jSVUXed7FX2CRV9HO//pXv6g2WMdduYLrAX73jmRlU+Gtb5nnzWFWIyc6vEBAKJ9MYbpV/VeN2WarEeBHZLVNFX52PQPGge+8SScIl81MYVB3PwQiUIB33BCvupHCJ1UI5H/geTp00nuNsPdGCuvbzwHeVoV2TTG5IwOFu96iEfBYwrYtwBTpGSjsD5OBy1yw5XyYacxklPYDtYtYrwaz+rWrEOofYydTjLW1qxCaa8X6bZhgkmWFFewpkFFTVATDssLmjToIcJ1uCoRA6wqBc81N16EFavlrWyEwYIRbBCNWFgQKi8kpTZPOMrU17DFwqwvg202jcPPvylNXDwXYtIcr5ENlVswUhj/p8C7vGWYvlIvMTlA7K8wUXub7O2warO0Gzm1DZXCNFB6vLlJHdmEjCpcoRdWtmyj0r69Sl+LB6qtwte3H/hvSKGwOllp1EWxmx+3ZZ/sNmx6+8mU6mDxGB2zvYbP6TZnO3YN8SNx7yDaXNu+lrALcg0IquLmUzR4276W0F7A6R5w9ZPNpQAp9UPU/zqdh80sJFeL8Ura1BaFC3NqCbX1IqBC3PmRb49MpRK7x2eI0dAqx1W1csTY6hdhYG1e8lE4hNl7KFfOmU4iNeTPlLQgVYvMWTLknQoXY3NOOK39IpRBf2saVA6ZSiN/4zJbHJ1KIz+Mz1mKQKMTXYnDW01Ao1Ngw+8sU4gWi6trkFSqjHz3AvZohKNSpTYQvgoegUKsbP3ib6wAU6rVXAJc/DkChXp03uFZ/AAr1avXBpW3yCjX3W4AdN3mFup0GocNUXqF2U3NgwE1cofbeNej+Q3GF+hvWgUZfXKFBBz5Y1FRaoUkDPliiVFqhyV5u2H58YYVG+/FhC4yj5ytoKVRd5LcVKi5a31RodqoAqC9G8KSkcZXympZ3PwZddfUJw+YmQ2y2d41p6z1IfxpZjI+ItH1SjinmXekAfaJEITj1ys55XFRQHJcQMjXt0oKkXxtjLx08RId6cPW0wkPUNxFXPsQK2alsQ7UYZP1LPY+rqywOwh60uEI+Nij7CA/SPSU+5+Lu+3kPsCc7+cnId99Xf2gNeSycjfAA51t4B2lZF1g6KvDuz5l5gLOCHuC8p2H4NpaPCJS3GVbsxCXSzRTv/nhAliMe7/4Mywc4h1TOaFg1E9fImH6Lhr7N3Z/p7HnFvZ/L7XFPqdbtvArOVb+FFT2EiCs8Na9lBHpclpHNCqqo7EfDn7XL8oiwnUAV/QG/WdpMvr2SZZeMKG0N1RlRAtSc0I6juiFJYRPh07+Ob+ancdGyiykPGhjHpgdV2WB/pOpTP8uHqO9MmFHMq2k2pPevRWE4WIOYPGtGz2qhO1qDRNp/gbJbLfAmcrZYGZcZsnI4YlprnPJa+oG1qD+Ted+IDebJJ7ZZwLDwX8o8mabt+SdIp0levvyukXmDdREtq22ZTY6TrNxWy6i4G2kOh8PhcDgcDofD4XA4HA7Hg/AHk2uIPmwOFcQAAAAASUVORK5CYII=">
+            <h>Linkedin</h>
+            <p>Matt04</p>
+            </div>
+        
+
+        <div class="box2">
+            <h>Send a Message</h>
+            <p>Name</p>
+            <input type="text" placeholder="Name...">
+
+            <p>Email</p>
+            <input type="text" placeholder="Email...">
+
+            <p>Subject</p>
+            <input type="text" placeholder="Subject...">
+
+            <p>Message</p>
+            <input type="text" placeholder="Message...">
+
+            <div>
+                <button>Send a message</button>
+            </div>
+        </div>
+              
+            
+        
+
+    </div>
+</body>
+</html>

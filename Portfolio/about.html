@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+            color:azure;
+        }
+        
+        .nav-bar p{
+            font-size: x-large;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 20px;
+            background: linear-gradient(
+                to bottom right,
+                #6889FF, #C668FF
+            );
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            
+        }
+        .nav-bar{
+           width: 1250px;
+           height: 40px;
+           display: flex;
+           justify-content:space-between ;
+           align-items: center ;
+           text-decoration: none;
+           margin-bottom: 80px;
+           color: whitesmoke;
+           background-color: grey;
+           border-radius: 15px;
+        }
+        ul{
+            display: flex;
+        }
+        li{ 
+            display: flex;
+            padding: 12px;
+            align-items: center;
+        }
+        li a{
+            color: azure;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .header{
+             max-width: 400px;
+             text-align: center;
+             position: absolute;
+             left: 400px;
+             padding-bottom: 150px;
+             
+        }
+        .header h{
+            font-size:xx-large;
+            color:rgb(139, 71, 202);
+        }
+        .header p{
+            font-size:larger;
+            
+        }
+        .content{
+            max-width: 600px;
+            display: flex;
+            padding-left: 300px;
+            gap: 40px;
+            padding-top: 350px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .content h{
+            font-size:xx-large;
+            color:rgb(139, 71, 202);
+        }
+        .content p{
+            font-size:larger;
+
+        }
+        .footer{
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+         .text1 h{
+            font-size: larger;
+            font-style: italic;
+            color: rgb(38, 90, 180);
+        }
+        .text2 h{
+            font-size: larger;
+            font-style: italic;
+            color: rgb(38, 90, 180);
+        }
+        .text1 p{
+            font-size: medium;
+            max-width: 480px;
+        }
+        .text2 p{
+            font-size: medium;
+            max-width: 480px;
+        }
+
+        @keyframes appear{
+            from{
+                opacity: 0;
+                scale: 0;
+            }
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .content{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 30%;
+        }
+
+        .footer{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 30%;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="nav-bar">
+        <div>
+            <p>Matt,the developer</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+       <h>About Me</h>
+       <p>I am a passionate web developer with a strong focus on creating clean, responsive, and user-friendly websites. I enjoy turning ideas into functional digital experiences using modern web technologies. I’m always eager to learn new tools and improve my skills to build fast, secure, and scalable web applications.</p>
+    </div>
+
+    <div class="content">
+
+        <div>
+           <h>Professional Background</h>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident nulla nihil expedita quaerat ad aut sit cumque illo, officia voluptas nemo dolorem beatae maxime consequuntur! Dolorum aperiam amet recusandae?</p>
+        </div>
+        <div>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB8ualGWXvQPU_KRMGvqZwiWT-5cmiPg2UNQ&s">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="text1">
+            <h>Education</h>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum iste sed accusamus similique ex blanditiis doloribus consequuntur eaque exercitationem non veritatis nesciunt quasi, rem quisquam mollitia animi inventore at ducimus.</p>
+        </div>
+
+        <div class="text2">
+            <h>Certificates</h>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rem voluptate! Est dignissimos cumque aspernatur voluptates deleniti architecto totam quisquam excepturi et nesciunt veniam, eaque ab harum nostrum mollitia quibusdam.</p>
+        </div>
+    </div>
+</body>
+</html>
